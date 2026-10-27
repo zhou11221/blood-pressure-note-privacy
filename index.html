@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="血压记录 App 隐私政策 / Blood Pressure Note Privacy Policy">
+  <title>血压记录 · 隐私政策</title>
+  <style>
+    :root { color-scheme: light; --bg:#edf6f0; --card:#fff; --ink:#16513c; --muted:#66736c; --accent:#2b8b5d; --line:#dce9e0; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 32px)); margin:40px auto; }
+    header,article { background:var(--card); border-radius:22px; box-shadow:0 10px 32px rgb(22 81 60 / 7%); }
+    header { padding:30px; margin-bottom:18px; }
+    article { padding:12px 30px 30px; }
+    h1 { margin:0 0 6px; font-size:clamp(1.8rem,5vw,2.5rem); letter-spacing:-.03em; }
+    h2 { margin:30px 0 8px; font-size:1.12rem; }
+    p,li { color:var(--muted); }
+    ul { padding-left:1.25rem; }
+    .meta { margin:0; font-size:.9rem; }
+    .notice { margin:22px 0 0; padding:14px 16px; border-left:4px solid var(--accent); background:#f3faf5; border-radius:10px; }
+    .language { display:flex; gap:8px; margin-top:20px; }
+    button { border:1px solid var(--line); border-radius:999px; background:#fff; color:var(--ink); padding:8px 15px; font:inherit; cursor:pointer; }
+    button[aria-pressed="true"] { background:var(--accent); color:#fff; border-color:var(--accent); }
+    a { color:var(--accent); }
+    footer { text-align:center; color:var(--muted); font-size:.84rem; padding:22px; }
+    [hidden] { display:none !important; }
+    @media (max-width:520px) { main{margin:16px auto} header,article{border-radius:16px} header,article{padding-left:20px;padding-right:20px} }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>血压记录</h1>
+    <p class="meta">隐私政策 · Privacy Policy</p>
+    <div class="language" aria-label="Language">
+      <button id="zh-button" type="button" aria-pressed="true">简体中文</button>
+      <button id="en-button" type="button" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <article id="zh">
+    <p class="meta">最后更新：2026 年 10 月 27 日</p>
+    <p class="notice">血压记录是一款本地优先的健康记录工具。本 App 仅用于记录和整理数据，不是医疗器械，也不能用于诊断或治疗。</p>
+    <h2>数据保存在哪里</h2>
+    <p>血压、心率、备注和健康档案默认只保存在你的设备上。开启 iCloud 云同步后，记录会通过 Apple CloudKit 同步到你自己的 iCloud 私有数据库，开发者无法访问。开启 Apple 健康同步后，相关数据会写入系统健康 App。</p>
+    <h2>拍照识别与第三方处理</h2>
+    <p>使用拍照识别时，你拍摄或选择的血压计照片会发送至阿里云通义千问（DashScope），仅用于读取本次照片中的数值。本 App 不保存照片副本，也不将照片用于广告、画像或训练。若不希望照片离开设备，请使用手动输入。</p>
+    <h2>权限</h2>
+    <ul>
+      <li>相机与相册：仅在你主动使用拍照识别时获取照片。</li>
+      <li>Apple 健康：经你明确授权后读取或写入血压和心率数据。</li>
+      <li>通知：经你允许后发送本机测量提醒。</li>
+    </ul>
+    <h2>我们不做的事</h2>
+    <p>本 App 不含广告或用户追踪 SDK，不出售个人数据，也不会将数据用于跨 App 或跨网站追踪。</p>
+    <h2>管理和删除数据</h2>
+    <p>你可以在 App 中删除任意记录，并选择是否同步删除 Apple 健康中的对应数据。关闭 iCloud 同步会停止后续同步；iCloud 中已有的数据可通过 Apple 账户的 iCloud 设置管理。</p>
+    <h2>儿童</h2>
+    <p>本 App 不面向 13 岁以下儿童，也不会有意收集儿童的信息。</p>
+    <h2>政策变更与联系</h2>
+    <p>政策更新会随 App 版本发布，并更新本页日期。如有隐私问题，请通过本页面所属 GitHub 仓库的 Issues 联系开发者。</p>
+  </article>
+
+  <article id="en" lang="en" hidden>
+    <p class="meta">Last updated: October 27, 2026</p>
+    <p class="notice">Blood Pressure Note is a local-first health logging tool. It is not a medical device and must not be used for diagnosis or treatment.</p>
+    <h2>Where your data is stored</h2>
+    <p>Blood pressure, heart rate, notes, and profile details are stored on your device by default. If you enable iCloud sync, records are synchronized through Apple CloudKit to your private iCloud database, which the developer cannot access. If you enable Apple Health sync, relevant data is written to the Health app.</p>
+    <h2>Photo recognition and third-party processing</h2>
+    <p>When you use photo recognition, the selected blood-pressure monitor photo is sent to Alibaba Cloud Qwen (DashScope) solely to read the values in that request. The app does not retain a copy or use the photo for advertising, profiling, or training. Use manual entry if you do not want a photo to leave your device.</p>
+    <h2>Permissions</h2>
+    <ul>
+      <li>Camera and Photos: used only when you choose photo recognition.</li>
+      <li>Apple Health: reads or writes blood pressure and heart-rate data after your authorization.</li>
+      <li>Notifications: sends on-device measurement reminders after your permission.</li>
+    </ul>
+    <h2>What we do not do</h2>
+    <p>The app contains no advertising or user-tracking SDKs, does not sell personal data, and does not use data for cross-app or cross-site tracking.</p>
+    <h2>Managing and deleting data</h2>
+    <p>You can delete records in the app and choose whether to remove matching Apple Health data. Turning off iCloud sync stops future synchronization. Existing iCloud data can be managed through your Apple Account iCloud settings.</p>
+    <h2>Children</h2>
+    <p>The app is not directed to children under 13 and does not knowingly collect information from children.</p>
+    <h2>Changes and contact</h2>
+    <p>Policy updates will ship with app updates and the date above will change. For privacy questions, contact the developer through Issues in the GitHub repository that hosts this page.</p>
+  </article>
+  <footer>© 2026 Blood Pressure Note</footer>
+</main>
+<script>
+  const zh = document.querySelector('#zh');
+  const en = document.querySelector('#en');
+  const zhButton = document.querySelector('#zh-button');
+  const enButton = document.querySelector('#en-button');
+  function show(language) {
+    const english = language === 'en';
+    zh.hidden = english; en.hidden = !english;
+    zhButton.setAttribute('aria-pressed', String(!english));
+    enButton.setAttribute('aria-pressed', String(english));
+    document.documentElement.lang = english ? 'en' : 'zh-Hans';
+  }
+  zhButton.addEventListener('click', () => show('zh'));
+  enButton.addEventListener('click', () => show('en'));
+</script>
+</body>
+</html>
